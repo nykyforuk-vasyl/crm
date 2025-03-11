@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '@/app/components/header';
-import Toolbar from '../components/toolbar';
-import SearchInput from '../components/search-input';
-import AddCompanyButton from '../components/add-company-button';
-import CompanyTable from '../components/company-table';
-import CompanyRow from '../components/company-row';
-import { Status } from '../components/status-label';
+import Toolbar from '../../components/toolbar';
+import SearchInput from '../../components/search-input';
+import AddCompanyButton from '../../components/add-company-button';
+import CompanyTable from '../../components/company-table';
+import CompanyRow from '../../components/company-row';
+import { Status } from '../../components/status-label';
 
 export interface PageProps {}
 
@@ -20,12 +20,12 @@ export default function Page({}: PageProps) {
         <CompanyTable>
           <CompanyRow
             id={1}
-            category={'Products'}
-            company={'Costro'}
+            category="Products"
+            company="Costro"
             status={Status.Pending}
             promotion={true}
-            country={'USA'}
-            joinedDate={'02.19.2023'}
+            country="USA"
+            joinedDate="02.19.2023"
           />
         </CompanyTable>
       </main>
